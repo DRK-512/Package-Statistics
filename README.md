@@ -40,7 +40,8 @@ All text above is from Cannonical, whereas here I will be jotting down my though
 ## Timeline
 Here is a time line of how long it took me to complete each of the following points listed above
 - Brainstorm: 15min
-- User input param: 
+- User input param: 3min
+- Check input param: 10min
 - File Fetcher based off input
 - Files Dictionary 
 - Organize the dictionary 
