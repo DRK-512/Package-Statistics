@@ -27,7 +27,7 @@ def fetcher(input):
 	# first check if it exists, if it does, then we skip this
 	if not file.exists ():
 		url = 'http://ftp.uk.debian.org/debian/dists/stable/main/Contents-'+input+'.gz'
-		wget.download(url)
+		wget.download(url, bar='')
 
 # Used to extract the .gz file
 def extractor(input): 

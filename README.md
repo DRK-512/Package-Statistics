@@ -38,12 +38,14 @@ All text above is from Cannonical, whereas here I will be jotting down my though
 5. Make a set from the dictonary, then print the top ten dictonary elements with the highest results. 
 
 ## Timeline
-Here is a time line of how long it took me to complete each of the following points listed above
+This is a timeline of how long it took me to complete each of the following points listed above
 - Brainstorm: 15min
 - User input param: 3min
 - Check input param: 15min
 - File Fetcher based off input: 30min
-- Files Dictionary & Organize the dictionary & Print top ten results: 25min (These were all done together) 
+- Files Dictionary & Organize the dictionary & Print top ten results: 25min 
+	- These were all done together, and I lost track of time in between them 
+
 Total Time: 1hr 28min
 
 Timestamps of commits will not reflect the time you see above due to me doing other things in between 
