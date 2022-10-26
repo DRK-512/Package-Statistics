@@ -18,7 +18,7 @@ def checkArch(input):
 		# if architecture is not valid, end the script
 		print(input+" is not a valid architecture, please input a valid one")
 		print("Here is a list of valid architectures for this script: ")
-		print("amd64\narm64\narmel\narmhf\ni386\nmips64el\nmipsel\nppc64el\ns390x")
+		print("all\namd64\narm64\narmel\narmhf\ni386\nmips64el\nmipsel\nppc64el\ns390x")
 		quit()
 
 # Used to fetch the .gz file 
