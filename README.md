@@ -42,7 +42,7 @@ Here is a time line of how long it took me to complete each of the following poi
 - Brainstorm: 15min
 - User input param: 3min
 - Check input param: 10min
-- File Fetcher based off input
+- File Fetcher based off input: 30min
 - Files Dictionary 
 - Organize the dictionary 
 - Print top ten results 
