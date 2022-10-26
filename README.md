@@ -48,5 +48,3 @@ This is a timeline of how long it took me to complete each of the following poin
 
 Total Time: 1hr 28min
 
-Timestamps of commits will not reflect the time you see above due to me doing other things in between 
-
