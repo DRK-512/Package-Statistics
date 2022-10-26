@@ -6,7 +6,7 @@ import gzip 	# extract .gz file
 import shutil 	# open the content of .gz file
 
 ############################################################################
-# 						    Helper Functions                               #
+#                           Helper Functions                               #
 ############################################################################
 
 # this will check the user's input architecture, and see if it is not valid
@@ -40,7 +40,7 @@ def extractor(input):
 				shutil.copyfileobj(f_in, f_out)	
 				
 ############################################################################
-# 							  Main Function                                #
+#                             Main Function                                #
 ############################################################################
 
 arch=""
