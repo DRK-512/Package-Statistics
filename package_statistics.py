@@ -14,7 +14,7 @@ import csv      # reading contents file
 def checkArch(input):
 	if not ((input=="amd64") or (input=="arm64") or (input=="armel") or (input=="armhf") or
 	(input=="i386") or (input=="mips64el") or (input=="mipsel") or (input=="ppc64el") or
-	(input=="s390x")):
+	(input=="s390x") or (input=="all")):
 		# if architecture is not valid, end the script
 		print(input+" is not a valid architecture, please input a valid one")
 		print("Here is a list of valid architectures for this script: ")
@@ -26,7 +26,6 @@ def fetcher(input):
 	file = pathlib.Path('./Contents-'+input+'.gz')
 	# first check if it exists, if it does, then we skip this
 	if not file.exists ():
-		print("Now pulling Contents-"+input+".gz")
 		url = 'http://ftp.uk.debian.org/debian/dists/stable/main/Contents-'+input+'.gz'
 		wget.download(url)
 
@@ -35,7 +34,6 @@ def extractor(input):
 	# first check if it exists, if it does, then we skip this
 	file = pathlib.Path('./Contents-'+input)
 	if not file.exists ():
-		print("\nNow extracting Contents-"+input+" ...")
 		with gzip.open('./Contents-'+input+'.gz', 'rb') as f_in:
 			with open('Contents-'+input, 'wb') as f_out:
 				shutil.copyfileobj(f_in, f_out)	
@@ -74,6 +72,26 @@ with open('./Contents-'+arch) as file_obj:
 		spaceIndex = row[0].rfind(" ")+1
 		package = str(row[0][spaceIndex:])
 		packageList.append(package)
+
+# Make a dictionary with package and package count
+packageDict = {}
+for pack in packageList:
+    if pack not in packageDict:
+        packageDict[pack] = 1
+    else:
+        packageDict[pack] += 1
+        
+# Find top 10 packages, and print their values       
+topPacks = (sorted(packageDict, key=packageDict.get, reverse=True)[:10])
+for i in range(10): 
+	spaceCount = (60-len(topPacks[i]))
+	if(spaceCount < 0): 
+		spaceCount=1
+	print(topPacks[i]+" "*spaceCount+str(packageDict[topPacks[i]]))
+
+
+
+
 
 
 
