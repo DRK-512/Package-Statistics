@@ -21,4 +21,7 @@ $ ./package_statistics.py <architecture name>
 ......
     <package name 10>        <number of files>
 ```
- 
+
+ ## Credit
+ This question was found [here](https://www.glassdoor.co.uk/Interview/python-telecom-engineer-interview-questions-SRCH_KO0,23.htm)
+ This is simply my crackk at it
