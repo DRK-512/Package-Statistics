@@ -5,7 +5,7 @@ The packages are stored in repositories and each repository contains a so called
 The format of that file is well described: [here](https://wiki.debian.org/RepositoryFormat#A.22Contents.22_indices)
 
 ## Project Description
-For your homework assignment, you are to develop a python command line tool that takes the architecture (amd64, arm64, mips etc.) as an argument and downloads the compressed contents file associated with it from a Debian mirror. 
+For your assignment, you are to develop a python command line tool that takes the architecture (amd64, arm64, mips etc.) as an argument and downloads the compressed contents file associated with it from a Debian mirror. 
 The program should parse the file and output the statistics of the top 10 packages that have the most files associated with them.
  
 ## How to run the code
