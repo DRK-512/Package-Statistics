@@ -24,4 +24,4 @@ $ ./package_statistics.py <architecture name>
 
  ## Credit
  This question was found [here](https://www.glassdoor.co.uk/Interview/python-telecom-engineer-interview-questions-SRCH_KO0,23.htm)
- This is simply my crackk at it
+ This is simply my crack at it
